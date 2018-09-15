@@ -6,7 +6,7 @@ Hack on Codacy
 
 > Codacy runs PyLint so we already have a linter in place.
 
-_A linter in a dynamic language should flag issues that the compiler would flag in a compiled language._  The linter should raise an alert if there is a syntax error or if an import is missing like a compiler would.  It should warn you that __basestring__, __cmp()__, __long__, __reload()__, __unicode__, __xrange()__ are not builtins in Python 3.
+_The ideal linter in a dynamic language should flag issues that the compiler would flag in a compiled language._  The linter should raise an alert if there is a syntax error or if an import is missing like a compiler would.  It should warn you that __basestring__, __cmp()__, __long__, __reload()__, __unicode__, __xrange()__ are not builtins in Python 3.
 
 Codacy does none of these things that a compiler would.  It merely says that __async def func():__ is not valid Python.  (_Argh!?!_)  It seems to be ___tuned to Python 2___ and is therefor more legacy than the PyLint that it is based on.  In the hands of a strong practitioner, PyLint can catch many of the issues mentioned above but it takes configuration and usually a lot of __# pylint: disable=xyz__ directives in your code.
 
