@@ -11,5 +11,7 @@ for i in xrange(2):                # Illegal in Python 3
 reload(sys)                        # Illegal in Python 3
 sys.setdefaultencoding("utf-8")    # Illegal in Python 3
 
-async def async_print(s):          # Illegal in Python 2
-    print(s, end=" ")              # Illegal in Python 2
+print("Hi", end=" ")               # Illegal in Python 2 without from __future__ import print_function
+print(f"{1+1}")                    # Illegal in Python < 3.6
+async def async_print(s):          # Illegal in Python < 3.4
+    print(s)
