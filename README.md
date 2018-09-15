@@ -4,6 +4,8 @@
 
 ### Trying (unsuccessfully) to find Python syntax errors and undefined names using Codacy...
 
+See: [codacy_hack.py](codacy_hack.py) for examples.
+
 > Codacy runs PyLint so we already have a linter in place.
 
 _The ideal linter in a dynamic language should flag issues that the compiler would flag in a compiled language._
